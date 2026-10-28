@@ -1,0 +1,27 @@
+{
+  "name": "HORIZON DIGITAL ACADEMIE",
+  "short_name": "Horizon Digital",
+  "description": "Accélérateur Tech & Studio Produit Numérique. Nous formons des jeunes à créer des applications et des solutions digitales pour l'Afrique.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff9fc",
+  "theme_color": "#e040a0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/photo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/photo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "business", "productivity"],
+  "lang": "fr",
+  "dir": "ltr"
+}

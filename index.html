@@ -8,7 +8,21 @@
 <meta name="author" content="HORIZON DIGITAL ACADEMIE" />
 <meta name="robots" content="index, follow" />
 <meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#e040a0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Horizon Digital" />
+<link rel="apple-touch-icon" href="/photo.jpg" />
 <!-- Google Analytics: remplace GA_MEASUREMENT_ID par ton ID (ex: G-XXXXXXXXXX) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script> -->
+
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -868,5 +882,38 @@
 </div>
 </footer>
 <!-- END: MainFooter -->
+<!-- Service Worker Registration (PWA) -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function(registration) {
+          console.log('ServiceWorker enregistré:', registration.scope);
+        })
+        .catch(function(err) {
+          console.log('ServiceWorker erreur:', err);
+        });
+    });
+  }
+</script>
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-plum-950 text-white p-4 shadow-2xl border-t-4 border-primary" style="display:none;">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-pink-200/90 font-medium">
+      Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre 
+      <a href="/mentions-legales.html" class="text-primary underline">politique de confidentialité</a>.
+    </p>
+    <div class="flex gap-3">
+      <button onclick="acceptCookies()" class="px-5 py-2 rounded-full bg-primary text-white font-bold text-sm hover:bg-pink-600 transition-colors">Accepter</button>
+      <button onclick="declineCookies()" class="px-5 py-2 rounded-full bg-white/10 text-white font-bold text-sm hover:bg-white/20 transition-colors">Refuser</button>
+    </div>
+  </div>
+</div>
+<script>
+  function acceptCookies() { localStorage.setItem('cookies_accepted', 'true'); document.getElementById('cookieBanner').style.display = 'none'; }
+  function declineCookies() { localStorage.setItem('cookies_accepted', 'false'); document.getElementById('cookieBanner').style.display = 'none'; }
+  if (!localStorage.getItem('cookies_accepted')) { document.getElementById('cookieBanner').style.display = 'block'; }
+</script>
+
 </body></html>
 
