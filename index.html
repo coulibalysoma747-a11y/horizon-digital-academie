@@ -8,6 +8,7 @@
 <meta name="author" content="HORIZON DIGITAL ACADEMIE" />
 <meta name="robots" content="index, follow" />
 <meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"/>
@@ -777,6 +778,25 @@
 <span>🌍 UEMOA &amp; Diaspora</span>
 <span>•</span>
 <span class="text-emerald-400">94% Placement</span>
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-plum-950 text-white p-4 shadow-2xl border-t-4 border-primary" style="display:none;">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-pink-200/90 font-medium">
+      Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre 
+      <a href="/mentions-legales.html" class="text-primary underline">politique de confidentialité</a>.
+    </p>
+    <div class="flex gap-3">
+      <button onclick="acceptCookies()" class="px-5 py-2 rounded-full bg-primary text-white font-bold text-sm hover:bg-pink-600 transition-colors">Accepter</button>
+      <button onclick="declineCookies()" class="px-5 py-2 rounded-full bg-white/10 text-white font-bold text-sm hover:bg-white/20 transition-colors">Refuser</button>
+    </div>
+  </div>
+</div>
+<script>
+  function acceptCookies() { localStorage.setItem('cookies_accepted', 'true'); document.getElementById('cookieBanner').style.display = 'none'; }
+  function declineCookies() { localStorage.setItem('cookies_accepted', 'false'); document.getElementById('cookieBanner').style.display = 'none'; }
+  if (!localStorage.getItem('cookies_accepted')) { document.getElementById('cookieBanner').style.display = 'block'; }
+</script>
+
 </div>
 </div>
 <div class="md:col-span-3">
@@ -798,7 +818,7 @@
 </div>
 </div>
 <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-pink-300 font-semibold">
-<p>© 2026 HORIZON DIGITAL ACADEMIE. Bâtir pour l'Afrique, rayonner à l'international.</p>
+<p>© 2026 HORIZON DIGITAL ACADEMIE. Bâtir pour l'Afrique, rayonner à l'international. | <a href="/mentions-legales.html" class="text-pink-300 hover:text-primary transition-colors">Mentions légales</a></p>
 <div class="flex items-center gap-3">
 <a aria-label="Retour en haut" class="w-10 h-10 rounded-full bg-plum-900 hover:bg-primary text-white border border-plum-800 flex items-center justify-center transition-colors shadow-sm" href="#">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
