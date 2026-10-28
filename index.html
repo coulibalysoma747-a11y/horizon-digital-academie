@@ -1,485 +1,715 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HORIZON DIGITAL ACADEMIE — Solutions Digitales pour l'Afrique</title>
-  <meta name="description" content="HORIZON DIGITAL ACADEMIE : nous formons des jeunes a creer des applications et des solutions digitales pour l'Afrique. Base au Burkina Faso." />
-  <meta name="keywords" content="HORIZON DIGITAL ACADEMIE, formation digitale, développement web, applications mobiles, solutions numériques, Burkina Faso, Afrique" />
-  <meta name="author" content="HORIZON DIGITAL ACADEMIE" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="HORIZON DIGITAL ACADEMIE — Solutions Digitales pour l'Afrique" />
-  <meta property="og:description" content="Nous formons des jeunes a creer des applications et des solutions digitales pour l'Afrique." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:site_name" content="HORIZON DIGITAL ACADEMIE" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HORIZON DIGITAL ACADEMIE" />
-  <meta name="twitter:description" content="Solutions digitales pour les entrepreneurs africains" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "HORIZON DIGITAL ACADEMIE",
-    "description": "Académie digitale dédiée à la formation de jeunes à la création d'applications et de solutions numériques pour l'Afrique.",
-    "url": "https://horizon-digital-academie.onrender.com",
-    "logo": "https://horizon-digital-academie.onrender.com/icon.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+226-04-05-99-29",
-      "contactType": "customer service",
-      "availableLanguage": ["French"]
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "BF"
-    },
-    "sameAs": []
-  }
+<html class="scroll-smooth antialiased dark selection:bg-amber-400 selection:text-slate-950" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HORIZON DIGITAL ACADEMIE | Accélérateur Tech & Studio Produit Numérique</title>
+<meta name="description" content="HORIZON DIGITAL ACADEMIE : nous formons des jeunes à créer des applications et des solutions digitales pour l'Afrique." />
+<meta name="keywords" content="HORIZON DIGITAL ACADEMIE, formation digitale, développement web, applications mobiles, bootcamp, studio produit, Burkina Faso, Afrique" />
+<meta name="author" content="HORIZON DIGITAL ACADEMIE" />
+<meta name="robots" content="index, follow" />
+<meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { brand: { void: '#04070D', dark: '#080C16', card: '#0D1424', cardHover: '#131D33', border: 'rgba(255, 255, 255, 0.08)', blue: '#2563EB', cyan: '#06B6D4', emerald: '#10B981', amber: '#F59E0B', gold: '#FBBF24', purple: '#8B5CF6' } },
+          boxShadow: { 'glow-amber': '0 0 35px -5px rgba(245, 158, 11, 0.45)', 'glow-blue': '0 0 40px -8px rgba(37, 99, 235, 0.35)', 'glow-emerald': '0 0 35px -8px rgba(16, 185, 129, 0.3)', 'glow-purple': '0 0 35px -8px rgba(139, 92, 246, 0.35)', 'glow-card': '0 10px 40px -10px rgba(0, 0, 0, 0.7)', 'inner-glow': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.1)' }
+        }
+      }
+    }
   </script>
-
-  <link rel="stylesheet" href="styles.css" />
+<style data-purpose="custom-enhancements">
+    .hero-grid-pattern { background-size: 44px 44px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px); }
+    .text-gradient-gold { background: linear-gradient(135deg, #FFFBEB 0%, #FCD34D 35%, #F59E0B 70%, #D97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass-panel { background: rgba(13, 20, 36, 0.72); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    details summary::-webkit-details-marker { display: none; }
+    @keyframes pulseGlow { 0%, 100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.05); } }
+    .animate-ambient { animation: pulseGlow 8s ease-in-out infinite; }
+  </style>
 </head>
-<body>
+<body class="bg-[#050811] text-slate-200 font-sans selection:bg-amber-400 selection:text-slate-950 overflow-x-hidden min-h-screen">
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-blue-600/15 via-indigo-600/10 to-transparent blur-[160px] pointer-events-none -z-10 animate-ambient"></div>
+<header class="sticky top-0 z-50 bg-[#050811]/85 backdrop-blur-xl border-b border-white/[0.08] transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 via-indigo-500 to-blue-600 p-[1.5px] shadow-lg shadow-indigo-600/30 group-hover:scale-105 transition-all duration-300">
+<div class="w-full h-full bg-[#070B16] rounded-[10px] flex items-center justify-center">
+<svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-white font-black text-lg tracking-tight leading-none">HORIZON DIGITAL</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+</div>
+<span class="text-[10px] font-extrabold uppercase tracking-[0.25em] text-indigo-400/90 mt-1">ACADÉMIE & STUDIO</span>
+</div>
+</a>
+<nav class="hidden md:flex items-center gap-1 bg-white/[0.03] border border-white/[0.08] px-4 py-1.5 rounded-full text-sm font-medium text-slate-300 backdrop-blur-md">
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#pedagogie">Bootcamps</a>
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#double-impact">Double Modèle</a>
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#projets">Projets</a>
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#partenaires">Écosystème</a>
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#temoignages">Témoignages</a>
+<a class="px-3 py-1 rounded-full hover:text-white hover:bg-white/[0.08] transition-all" href="#faq">FAQ</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="relative group inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-bold rounded-full text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 transition-all duration-300 shadow-glow-amber active:scale-95" href="#contact">
+<span class="relative z-10 flex items-center gap-2">
+<span>Lancer un Projet</span>
+<svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<section class="relative min-h-[92vh] flex flex-col justify-center items-center text-white overflow-hidden pt-12 pb-20 px-4 sm:px-6 lg:px-8">
+<div class="absolute inset-0 hero-grid-pattern opacity-60 pointer-events-none"></div>
+<div class="relative max-w-5xl mx-auto text-center z-10 pt-4">
+<div class="flex flex-wrap items-center justify-center gap-2.5 mb-8">
+<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-xs font-semibold text-emerald-300 backdrop-blur-xl shadow-inner">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+Placement 94% à 6 mois
+</span>
+<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-xs font-semibold text-amber-300 backdrop-blur-xl shadow-inner">
+<span>📍</span> Hub Ouagadougou & En Ligne (UEMOA)
+</span>
+</div>
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] mb-6">
+L'Accélérateur de Talents Tech & <br/>
+<span class="text-gradient-gold drop-shadow-[0_10px_25px_rgba(245,158,11,0.25)]">Fabrique de Produits Numériques</span>
+</h1>
+<p class="max-w-3xl mx-auto text-lg sm:text-xl text-slate-300/90 font-normal leading-relaxed mb-10">
+Nous formons des jeunes à créer des applications et des solutions digitales pour l'Afrique.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 mb-14">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 text-slate-950 font-extrabold text-base shadow-glow-amber hover:shadow-amber-400/60 hover:scale-[1.02] active:scale-95 transition-all duration-200" href="#contact">
+<span>Confier un Projet au Studio</span>
+<svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/[0.06] hover:bg-white/[0.12] backdrop-blur-xl border border-white/[0.15] hover:border-white/30 text-white font-semibold text-base shadow-lg active:scale-95 transition-all duration-200" href="#pedagogie">
+<span>Explorer les Bootcamps 2026</span>
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
 
-  <!-- ===== HEADER ===== -->
-  <header class="header" id="header">
-    <div class="container">
-      <a href="#" class="logo">
-        <span class="logo-icon">🎓</span>
-        <span class="logo-text">HORIZON DIGITAL ACADEMIE</span>
-      </a>
-      <nav class="nav" id="nav">
-        <a href="#services">Services</a>
-        <a href="#projets">Projets</a>
-        <a href="#apropos">À propos</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
-    </div>
-  </header>
+<!-- BEGIN: Section Partenaires -->
+<section class="py-12 bg-[#04070E] border-y border-white/[0.06]" id="partenaires">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400">
+Ils soutiennent nos talents, financent nos bourses et déploient nos technologies
+</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center opacity-70 hover:opacity-100 transition-opacity">
+<div class="px-5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm font-black tracking-tight text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
+<span>Orange Digital Center</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm font-black tracking-tight text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+<span>PNUD Sahel Tech</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm font-black tracking-tight text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<span>Sahel AgriTech Alliance</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm font-black tracking-tight text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+<span>AfriVentures Capital</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm font-black tracking-tight text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<span>Hub Innovation UEMOA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section Partenaires -->
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="container">
-      <span class="hero-badge">🇧🇫 Basé au Burkina Faso · au service de l'Afrique</span>
-      <h1>Transformez votre idée en <span class="highlight">projet digital</span></h1>
-      <p class="hero-subtitle">Nous formons des jeunes à créer des applications et des solutions digitales pour l'Afrique.</p>
-      <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">Découvrir nos services</a>
-        <a href="#contact" class="btn btn-secondary">Nous contacter</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-number">5</span>
-          <span class="hero-stat-label">Pays couverts</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">10+</span>
-          <span class="hero-stat-label">Projets réalisés</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">100%</span>
-          <span class="hero-stat-label">Engagement</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">24/7</span>
-          <span class="hero-stat-label">Support disponible</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- BEGIN: Section Double Impact -->
+<section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative" id="double-impact">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="inline-flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+Notre Double ADN Stratégique
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+Pourquoi le modèle Horizon transforme la donne
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg leading-relaxed">
+Nous ne sommes ni une simple école théorique, ni une agence classique : nous formons l'élite qui bâtit vos produits les plus complexes.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-panel rounded-3xl p-8 sm:p-10 border border-white/[0.08] hover:border-amber-400/40 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group">
+<div class="absolute -right-20 -top-20 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-500/20 transition-all"></div>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-3xl mb-6 shadow-inner text-amber-400">
+🎓
+</div>
+<span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Branche 01 • Capital Humain</span>
+<h3 class="text-2xl sm:text-3xl font-black text-white mt-2 mb-4">L'Académie des Bâtisseurs Tech</h3>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+Un cursus d'ingénierie active calibré sur les besoins réels du marché mondial : zéro cours magistral rébarbatif, 100% de code en conditions de production, revues de pull request exigeantes et apprentissage de l'autonomie architecturale.
+</p>
+<ul class="space-y-3 text-sm text-slate-300 border-t border-white/[0.06] pt-6 mb-8">
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-400"></span><span>Sélection rigoureuse sur potentiel logique et motivation</span></li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-400"></span><span>Mentorat par des ingénieurs seniors de la diaspora tech</span></li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-400"></span><span>Immersion directe sur les projets clients du Studio</span></li>
+</ul>
+</div>
+<a class="inline-flex items-center gap-2 text-sm font-bold text-amber-400 hover:text-amber-300 transition-colors" href="#pedagogie">
+<span>Découvrir le programme pédagogique</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+</div>
 
-  <!-- ===== SERVICES ===== -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Nos services</span>
-        <h2 class="section-title">Tout ce qu'il faut pour réussir dans le digital</h2>
-        <p class="section-subtitle">Des solutions complètes et adaptées au contexte africain, de la formation au développement.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">🎓</div>
-          <h3>Formation à la Création d'Apps</h3>
-          <p>Nous formons des jeunes à créer des applications web et mobiles de A à Z, du code à la mise en production.</p>
-          <ul class="service-features">
-            <li>Développement web (HTML, CSS, JavaScript)</li>
-            <li>Applications mobiles (Android)</li>
-            <li>Base de données et backend</li>
-            <li>Projet réel en fin de formation</li>
-          </ul>
-        </div>
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">🌐</div>
-          <h3>Développement Web</h3>
-          <p>Création de sites web professionnels, vitrines, catalogues et applications web sur mesure.</p>
-          <ul class="service-features">
-            <li>Sites vitrines et landing pages</li>
-            <li>Catalogues en ligne</li>
-            <li>Applications web complexes</li>
-            <li>Responsive et optimisé SEO</li>
-          </ul>
-        </div>
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">📱</div>
-          <h3>Applications Mobiles</h3>
-          <p>Conception et développement d'applications mobiles adaptées aux besoins des entreprises africaines.</p>
-          <ul class="service-features">
-            <li>Applications Android et iOS</li>
-            <li>Interfaces intuitives et modernes</li>
-            <li>Intégration Mobile Money</li>
-            <li>Support et maintenance</li>
-          </ul>
-        </div>
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">💳</div>
-          <h3>Solutions de Paiement</h3>
-          <p>Intégration de solutions de paiement Mobile Money pour encaisser en ligne dans 5 pays.</p>
-          <ul class="service-features">
-            <li>Liens de paiement</li>
-            <li>API et webhooks</li>
-            <li>Billetterie avec QR code</li>
-            <li>Tableau de bord marchand</li>
-          </ul>
-        </div>
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">📊</div>
-          <h3>Mentorat & Accompagnement</h3>
-          <p>Accompagnement personnalisé des jeunes développeurs du début à la mise en production de leur application.</p>
-          <ul class="service-features">
-            <li>Suivi individualisé</li>
-            <li>Revue de code</li>
-            <li>Aide au déploiement</li>
-            <li>Réseau professionnel</li>
-          </ul>
-        </div>
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">🛠️</div>
-          <h3>Support & Maintenance</h3>
-          <p>Support technique et maintenance pour vos projets digitaux, disponibles 24/7.</p>
-          <ul class="service-features">
-            <li>Mises à jour et corrections</li>
-            <li>Hébergement et déploiement</li>
-            <li>Sauvegardes automatiques</li>
-            <li>Support réactif</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="glass-panel rounded-3xl p-8 sm:p-10 border border-white/[0.08] hover:border-blue-400/40 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group">
+<div class="absolute -right-20 -top-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/20 transition-all"></div>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-3xl mb-6 shadow-inner text-blue-400">
+⚡
+</div>
+<span class="text-xs font-extrabold uppercase tracking-wider text-blue-400">Branche 02 • Ingénierie & SaaS</span>
+<h3 class="text-2xl sm:text-3xl font-black text-white mt-2 mb-4">Le Studio de Développement Numérique</h3>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+Nous concevons, développons et maintenons les plateformes digitales stratégiques des startups, PME et institutions en Afrique. Du prototype validé en 3 semaines au système d'information critique à haute tolérance de panne.
+</p>
+<ul class="space-y-3 text-sm text-slate-300 border-t border-white/[0.06] pt-6 mb-8">
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-400"></span><span>Développement sur-mesure d'applications web, mobiles et IoT</span></li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-400"></span><span>Architectures résilientes : offline-first et intégration Mobile Money</span></li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-400"></span><span>Accompagnement produit complet : Design, Tech & Croissance</span></li>
+</ul>
+</div>
+<a class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors" href="#contact">
+<span>Co-construire votre produit numérique</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: Section Double Impact -->
 
+<!-- BEGIN: Section Bootcamps -->
+<section class="py-24 bg-[#070B16] border-y border-white/[0.08] relative" id="pedagogie">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest bg-amber-400/10 px-4 py-1.5 rounded-full border border-amber-400/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+Cursus d'Excellence 2026
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+3 Parcours Intensifs. 16 Semaines. Un Métier d'Avenir.
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+Un apprentissage par la pratique extrême avec livraison obligatoire de produits réels en production.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Parcours 1 -->
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-amber-400/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/20 text-xs font-bold font-mono">16 SEMAINES</span>
+<span class="text-xs text-slate-400 font-bold">Cohorte Mars 2026</span>
+</div>
+<h3 class="text-xl font-black text-white mb-2 group-hover:text-amber-300 transition-colors">
+Architecture Web Fullstack & Cloud
+</h3>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+Maîtrisez la création d'applications web scalables de bout en bout : du frontend réactif aux microservices conteneurisés sécurisés.
+</p>
+<div class="space-y-3 text-xs text-slate-300 mb-6">
+<div class="flex items-center gap-2 font-mono text-amber-400/90">
+<span>⚙</span> Next.js 15, TypeScript, Node.js & Go
+</div>
+<div class="flex items-center gap-2 font-mono text-amber-400/90">
+<span>⚙</span> PostgreSQL, Redis, Supabase, Prisma
+</div>
+<div class="flex items-center gap-2 font-mono text-amber-400/90">
+<span>⚙</span> Docker, CI/CD GitHub Actions & AWS/GCP
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-white/[0.06]">
+<p class="text-xs text-slate-400 mb-3"><strong class="text-white">Projet de fin d'études :</strong> SaaS B2B complet avec facturation automatisée et passerelle de paiement multi-devises.</p>
+<a class="block w-full py-2.5 text-center text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-xl transition-all" href="#contact">
+Postuler à ce parcours
+</a>
+</div>
+</div>
+<!-- Parcours 2 -->
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-blue-400/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/20 text-xs font-bold font-mono">16 SEMAINES</span>
+<span class="text-xs text-slate-400 font-bold">Cohorte Mars 2026</span>
+</div>
+<h3 class="text-xl font-black text-white mb-2 group-hover:text-blue-300 transition-colors">
+Mobile Flutter & Offline-First
+</h3>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+Concevez des applications Android et iOS ultra-performantes adaptées aux réalités des connexions réseau fluctuantes du continent africain.
+</p>
+<div class="space-y-3 text-xs text-slate-300 mb-6">
+<div class="flex items-center gap-2 font-mono text-blue-400/90">
+<span>⚙</span> Flutter SDK & Dart Avancé
+</div>
+<div class="flex items-center gap-2 font-mono text-blue-400/90">
+<span>⚙</span> Architecture BLoC, SQLite, Isar & Sync engine
+</div>
+<div class="flex items-center gap-2 font-mono text-blue-400/90">
+<span>⚙</span> Bluetooth Low Energy, GPS géolocalisation & Push
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-white/[0.06]">
+<p class="text-xs text-slate-400 mb-3"><strong class="text-white">Projet de fin d'études :</strong> App mobile logistique temps réel fonctionnant 100% sans connexion internet.</p>
+<a class="block w-full py-2.5 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all" href="#contact">
+Postuler à ce parcours
+</a>
+</div>
+</div>
 
-  <!-- ===== PROJETS ===== -->
-  <section id="projets" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Nos projets</span>
-        <h2 class="section-title">Ce que nous avons construit</h2>
-        <p class="section-subtitle">Découvrez les réalisations de HORIZON DIGITAL ACADEMIE.</p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card animate-on-scroll">
-          <span class="project-icon">💳</span>
-          <h3>YiriwaPay</h3>
-          <p>Plateforme de paiement Mobile Money pour les marchands en Afrique de l'Ouest et Centrale. Encaissement, liens de paiement, billetterie, API.</p>
-          <div class="project-tags">
-            <span>Next.js</span>
-            <span>Supabase</span>
-            <span>Paiement</span>
-            <span>5 pays</span>
-          </div>
-          <a href="https://yiriwapay-app.vercel.app" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
-        </article>
-        <article class="project-card animate-on-scroll">
-          <span class="project-icon">📦</span>
-          <h3>ZINDO</h3>
-          <p>Logiciel de gestion de stock et de caisse pour boutiques et PME au Burkina Faso. Gestion des stocks, ventes, et rapports.</p>
-          <div class="project-tags">
-            <span>Gestion de stock</span>
-            <span>Caisse</span>
-            <span>PME</span>
-            <span>Burkina Faso</span>
-          </div>
-          <a href="https://zindo.site" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
-        </article>
-        <article class="project-card animate-on-scroll">
-          <span class="project-icon">🎓</span>
-          <h3>Plateforme de Formation</h3>
-          <p>Plateforme en ligne pour la formation aux métiers du digital avec cours, exercices et suivi.</p>
-          <div class="project-tags">
-            <span>Web</span>
-            <span>Formation</span>
-            <span>Interactif</span>
-          </div>
-          <a href="#contact" class="project-link">En savoir plus →</a>
-        </article>
-        <article class="project-card animate-on-scroll">
-          <span class="project-icon">📱</span>
-          <h3>App Mobile Commerciale</h3>
-          <p>Application mobile pour la gestion commerciale des petites entreprises avec suivi des ventes et stocks.</p>
-          <div class="project-tags">
-            <span>Mobile</span>
-            <span>Android</span>
-            <span>Gestion</span>
-          </div>
-          <a href="#contact" class="project-link">En savoir plus →</a>
-        </article>
-      </div>
-    </div>
-  </section>
+<!-- Parcours 3 -->
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-purple-400/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/20 text-xs font-bold font-mono">16 SEMAINES</span>
+<span class="text-xs text-slate-400 font-bold">Cohorte Mars 2026</span>
+</div>
+<h3 class="text-xl font-black text-white mb-2 group-hover:text-purple-300 transition-colors">
+Product Management & UX/UI
+</h3>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+Passez de l'idée au produit rentable. Maîtrisez la recherche utilisateur, le prototypage haute fidélité, le scoping Agile et le Product-Led Growth.
+</p>
+<div class="space-y-3 text-xs text-slate-300 mb-6">
+<div class="flex items-center gap-2 font-mono text-purple-400/90">
+<span>⚙</span> Figma avancé, Design Systems & Tokens
+</div>
+<div class="flex items-center gap-2 font-mono text-purple-400/90">
+<span>⚙</span> Product Discovery, User Research & Personas
+</div>
+<div class="flex items-center gap-2 font-mono text-purple-400/90">
+<span>⚙</span> Sprint Agile Scrum, Metrics AARRR & Analytics
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-white/[0.06]">
+<p class="text-xs text-slate-400 mb-3"><strong class="text-white">Projet de fin d'études :</strong> Conception intégrale d'un produit fintech testé auprès de 100 usagers réels.</p>
+<a class="block w-full py-2.5 text-center text-xs font-bold text-white bg-purple-600 hover:bg-purple-500 rounded-xl transition-all" href="#contact">
+Postuler à ce parcours
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section Bootcamps -->
 
-  <!-- ===== À PROPOS ===== -->
-  <section id="apropos" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content">
-          <span class="section-badge">À propos</span>
-          <h3>Une académie digitale au service de l'Afrique</h3>
-          <p>
-            <strong>HORIZON DIGITAL ACADEMIE</strong> est née de la volonté de former des jeunes à créer des applications et des solutions digitales pour l'Afrique.
-          </p>
-          <p>
-            Notre mission : former la prochaine génération de développeurs et d'entrepreneurs digitaux africains. De la formation au développement, nous accompagnons chaque projet de A à Z.
-          </p>
-          <div class="about-features">
-            <div class="about-feature">
-              <span class="about-feature-icon">🎯</span>
-              <span>Formation pratique</span>
-            </div>
-            <div class="about-feature">
-              <span class="about-feature-icon">💻</span>
-              <span>Projets réels</span>
-            </div>
-            <div class="about-feature">
-              <span class="about-feature-icon">🤝</span>
-              <span>Mentorat personnalisé</span>
-            </div>
-            <div class="about-feature">
-              <span class="about-feature-icon">🚀</span>
-              <span>Mise en production</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="stats">
-            <div class="stat">
-              <span class="stat-number">5</span>
-              <span class="stat-label">Pays couverts</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">10+</span>
-              <span class="stat-label">Projets réalisés</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Personnes formées</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Engagement</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- BEGIN: Section Projets -->
+<section class="py-28 bg-[#050811] text-white relative overflow-hidden" id="projets">
+<div class="absolute inset-0 hero-grid-pattern opacity-40 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="inline-flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-widest bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+Portfolio Réalisations & Impact
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+Des Produits Stratégiques Conçus au Studio
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+Découvrez les réalisations de HORIZON DIGITAL ACADEMIE.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- PROJET 1 : YiriwaPay -->
+<div class="group glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-emerald-400/50 hover:bg-[#0D152A] transition-all duration-300 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-2xl shadow-inner">
+💳
+</div>
+<div>
+<h3 class="text-2xl font-black text-white group-hover:text-emerald-400 transition-colors">YiriwaPay</h3>
+<span class="text-xs text-slate-400 font-medium">Paiement Mobile Money • 5 pays d'Afrique</span>
+</div>
+</div>
+<span class="text-xs font-bold px-3 py-1 bg-emerald-400/10 border border-emerald-400/20 text-emerald-300 rounded-full">Fintech</span>
+</div>
+<div class="bg-[#050811] rounded-2xl p-4 border border-white/[0.08] mb-6 font-mono text-xs text-slate-300 shadow-inner">
+<div class="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-3">
+<span class="text-[11px] text-slate-400">PAYS COUVERTS : BF, CI, SN, BJ, CM</span>
+<span class="text-emerald-400 font-bold">EN LIGNE</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-[11px] py-1">
+<div class="bg-white/[0.02] p-2 rounded-lg border border-white/[0.04]">
+<span class="text-slate-400 block text-[10px]">Réseaux Mobile Money</span>
+<span class="text-white font-bold">Orange, Moov, MTN, Wave, Free</span>
+</div>
+<div class="bg-white/[0.02] p-2 rounded-lg border border-white/[0.04]">
+<span class="text-slate-400 block text-[10px]">Fonctionnalités</span>
+<span class="text-emerald-400 font-bold">Liens, API, Billetterie, QR Code</span>
+</div>
+</div>
+</div>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+Plateforme de paiement Mobile Money pour les marchands en Afrique de l'Ouest et Centrale. Encaissement, liens de paiement, billetterie avec QR code, API et webhooks.
+</p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Next.js</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Supabase</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Mobile Money</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">5 pays</span>
+</div>
+<a class="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors group-hover:translate-x-1 duration-200" href="https://yiriwapay-app.vercel.app" target="_blank" rel="noopener">
+<span>Voir YiriwaPay</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+</div>
+</div>
 
+<!-- PROJET 2 : ZINDO -->
+<div class="group glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-blue-400/50 hover:bg-[#0D152A] transition-all duration-300 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-2xl shadow-inner">
+📦
+</div>
+<div>
+<h3 class="text-2xl font-black text-white group-hover:text-blue-400 transition-colors">ZINDO</h3>
+<span class="text-xs text-slate-400 font-medium">Gestion de stock & Caisse • PME Burkina Faso</span>
+</div>
+</div>
+<span class="text-xs font-bold px-3 py-1 bg-blue-400/10 border border-blue-400/20 text-blue-300 rounded-full">Gestion</span>
+</div>
+<div class="bg-[#050811] rounded-2xl p-4 border border-white/[0.08] mb-6 font-mono text-xs text-slate-300 shadow-inner">
+<div class="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-3">
+<span class="text-[11px] text-slate-400">CIBLE : BOUTIQUES & PME</span>
+<span class="text-blue-400 font-bold">EN LIGNE</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-[11px] py-1">
+<div class="bg-white/[0.02] p-2 rounded-lg border border-white/[0.04]">
+<span class="text-slate-400 block text-[10px]">Fonctionnalités</span>
+<span class="text-white font-bold">Stock, Caisse, Rapports</span>
+</div>
+<div class="bg-white/[0.02] p-2 rounded-lg border border-white/[0.04]">
+<span class="text-slate-400 block text-[10px]">Pays</span>
+<span class="text-blue-400 font-bold">Burkina Faso</span>
+</div>
+</div>
+</div>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+Logiciel de gestion de stock et de caisse pour boutiques et PME au Burkina Faso. Suivi des stocks, encaissement, et rapports de vente.
+</p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Gestion de stock</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Caisse</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">PME</span>
+<span class="px-3 py-1 text-xs font-medium bg-white/[0.04] text-slate-300 rounded-lg border border-white/[0.06]">Burkina Faso</span>
+</div>
+<a class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors group-hover:translate-x-1 duration-200" href="https://zindo.site" target="_blank" rel="noopener">
+<span>Voir ZINDO</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section Projets -->
 
-  <!-- ===== TÉMOIGNAGES ===== -->
-  <section id="temoignages" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Témoignages</span>
-        <h2 class="section-title">Ce que disent nos clients</h2>
-        <p class="section-subtitle">Des résultats concrets pour des entrepreneurs africains.</p>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card animate-on-scroll">
-          <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">Grâce à HORIZON DIGITAL ACADEMIE, j'ai pu lancer mon site de vente en ligne et recevoir des paiements Mobile Money. Le processus a été rapide et professionnel.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">A</div>
-            <div>
-              <div class="testimonial-name">Awa Traoré</div>
-              <div class="testimonial-role">Commerçante, Ouagadougou</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card animate-on-scroll">
-          <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">La formation en développement web m'a permis de créer mes propres sites. L'accompagnement est excellent et adapté à notre réalité africaine.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">M</div>
-            <div>
-              <div class="testimonial-name">Moussa Ouédraogo</div>
-              <div class="testimonial-role">Développeur junior, Bobo-Dioulasso</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card animate-on-scroll">
-          <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">YiriwaPay a transformé la façon dont je reçois les paiements. Plus de captures d'écran à vérifier, tout est automatique et traçable.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">K</div>
-            <div>
-              <div class="testimonial-name">Karim Compaoré</div>
-              <div class="testimonial-role">Organisateur d'événements, Ouagadougou</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- BEGIN: Section Témoignages -->
+<section class="py-28 bg-[#070B16] text-white border-t border-white/[0.08] relative overflow-hidden" id="temoignages">
+<div class="absolute inset-0 hero-grid-pattern opacity-30 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest bg-amber-400/10 px-4 py-1.5 rounded-full border border-amber-400/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+Retours d'Expérience du Terrain
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+La Voix des Bâtisseurs et de nos Alumni
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+Découvrez comment notre rigueur technique se traduit en résultats tangibles.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-emerald-400/40 hover:bg-[#0D152A] transition-all duration-300 flex flex-col justify-between shadow-xl">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-sm mb-5">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-8">
+« Grâce à HORIZON DIGITAL ACADEMIE, j'ai pu lancer mon site de vente en ligne et recevoir des paiements Mobile Money. Le processus a été rapide et professionnel. »
+</p>
+</div>
+<div class="flex items-center gap-3.5 pt-5 border-t border-white/[0.08]">
+<div class="w-11 h-11 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-500 text-white font-black flex items-center justify-center text-sm shadow-md ring-2 ring-white/10">
+A
+</div>
+<div>
+<h4 class="font-bold text-white text-sm">Awa Traoré</h4>
+<p class="text-xs text-slate-400">Commerçante, Ouagadougou</p>
+</div>
+</div>
+</div>
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-blue-400/40 hover:bg-[#0D152A] transition-all duration-300 flex flex-col justify-between shadow-xl">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-sm mb-5">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-8">
+« La formation en développement web m'a permis de créer mes propres sites. L'accompagnement est excellent et adapté à notre réalité africaine. »
+</p>
+</div>
+<div class="flex items-center gap-3.5 pt-5 border-t border-white/[0.08]">
+<div class="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 text-white font-black flex items-center justify-center text-sm shadow-md ring-2 ring-white/10">
+M
+</div>
+<div>
+<h4 class="font-bold text-white text-sm">Moussa Ouédraogo</h4>
+<p class="text-xs text-slate-400">Développeur junior, Bobo-Dioulasso</p>
+</div>
+</div>
+</div>
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-purple-400/40 hover:bg-[#0D152A] transition-all duration-300 flex flex-col justify-between shadow-xl">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-sm mb-5">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-8">
+« YiriwaPay a transformé la façon dont je reçois les paiements. Plus de captures d'écran à vérifier, tout est automatique et traçable. »
+</p>
+</div>
+<div class="flex items-center gap-3.5 pt-5 border-t border-white/[0.08]">
+<div class="w-11 h-11 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-black flex items-center justify-center text-sm shadow-md ring-2 ring-white/10">
+K
+</div>
+<div>
+<h4 class="font-bold text-white text-sm">Karim Compaoré</h4>
+<p class="text-xs text-slate-400">Organisateur d'événements, Ouagadougou</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section Témoignages -->
 
-  <!-- ===== FAQ ===== -->
-  <section id="faq" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">FAQ</span>
-        <h2 class="section-title">Questions fréquentes</h2>
-        <p class="section-subtitle">Tout ce que vous devez savoir.</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Combien coûte un site web ?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Le coût dépend de la complexité du projet. Un site vitrine simple commence à partir de 50 000 FCFA. Un site e-commerce ou une application web peut coûter plus. Contactez-nous pour un devis personnalisé.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Combien de temps pour créer un site ?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Un site vitrine simple : 1 à 2 semaines. Un site e-commerce ou une application : 3 à 6 semaines. Nous vous donnons un délai précis après l'analyse de votre projet.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Proposez-vous des formations ?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui, nous proposons des formations en développement web, marketing digital et entrepreneuriat numérique. Les formations peuvent être en présentiel ou en ligne.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Travaillez-vous avec des clients en dehors du Burkina Faso ?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui, nous travaillons avec des clients dans toute l'Afrique de l'Ouest et au-delà. La communication se fait par WhatsApp, email et visioconférence.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Proposez-vous de l'hébergement ?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui, nous proposons des solutions d'hébergement gratuites (Vercel, Netlify, Render) ou payantes selon vos besoins. Nous vous conseillons la meilleure option.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- BEGIN: FAQSection -->
+<section class="py-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative" id="faq">
+<div class="text-center mb-16">
+<span class="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+Réponses Claires & Précises
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+Questions fréquentes
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+Tout ce qu'il faut savoir avant d'intégrer l'Académie ou de confier un développement au Studio.
+</p>
+</div>
+<div class="space-y-4">
+<details class="group glass-panel rounded-2xl border border-white/[0.08] p-6 open:border-amber-400/40 open:bg-[#0D152A] transition-all">
+<summary class="flex justify-between items-center font-bold text-white text-base sm:text-lg cursor-pointer list-none select-none">
+<span>Comment se passe la sélection pour les bootcamps de l'Académie ?</span>
+<div class="w-8 h-8 rounded-full bg-white/[0.05] flex items-center justify-center text-amber-400 border border-white/10 group-open:bg-amber-400 group-open:text-slate-950 transition-colors">
+<span class="text-xl font-medium transition-transform group-open:rotate-45">+</span>
+</div>
+</summary>
+<div class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-white/[0.06] pt-4">
+Notre processus repose sur 3 étapes : un questionnaire en ligne d'évaluation logique, un court défi technique ou d'analyse créative, et un entretien individuel de motivation. Nous recherchons avant tout la ténacité, l'éthique de travail et la passion d'apprendre.
+</div>
+</details>
+<details class="group glass-panel rounded-2xl border border-white/[0.08] p-6 open:border-amber-400/40 open:bg-[#0D152A] transition-all">
+<summary class="flex justify-between items-center font-bold text-white text-base sm:text-lg cursor-pointer list-none select-none">
+<span>Quelle est la garantie de mise en production pour les clients du Studio ?</span>
+<div class="w-8 h-8 rounded-full bg-white/[0.05] flex items-center justify-center text-amber-400 border border-white/10 group-open:bg-amber-400 group-open:text-slate-950 transition-colors">
+<span class="text-xl font-medium transition-transform group-open:rotate-45">+</span>
+</div>
+</summary>
+<div class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-white/[0.06] pt-4">
+Chaque projet confié au Studio Horizon est cadré avec un cahier des charges rigoureux, un rétro-planning contractuel et une garantie de maintenance post-déploiement de 90 jours incluse. Vous êtes propriétaire à 100% de votre code source, de vos bases de données et de votre infrastructure cloud dès le premier jour.
+</div>
+</details>
+<details class="group glass-panel rounded-2xl border border-white/[0.08] p-6 open:border-amber-400/40 open:bg-[#0D152A] transition-all">
+<summary class="flex justify-between items-center font-bold text-white text-base sm:text-lg cursor-pointer list-none select-none">
+<span>Comment intégrez-vous le mode hors-ligne (Offline-First) ?</span>
+<div class="w-8 h-8 rounded-full bg-white/[0.05] flex items-center justify-center text-amber-400 border border-white/10 group-open:bg-amber-400 group-open:text-slate-950 transition-colors">
+<span class="text-xl font-medium transition-transform group-open:rotate-45">+</span>
+</div>
+</summary>
+<div class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-white/[0.06] pt-4">
+Nos architectures mobiles stockent les transactions et données dans une base locale sécurisée sur le terminal. Dès qu'un réseau est capté, notre moteur de réconciliation bi-directionnelle synchronise les flux avec les serveurs sans bloquer l'opérateur sur le terrain.
+</div>
+</details>
+<details class="group glass-panel rounded-2xl border border-white/[0.08] p-6 open:border-amber-400/40 open:bg-[#0D152A] transition-all">
+<summary class="flex justify-between items-center font-bold text-white text-base sm:text-lg cursor-pointer list-none select-none">
+<span>Pouvez-vous intervenir en dehors du Burkina Faso ?</span>
+<div class="w-8 h-8 rounded-full bg-white/[0.05] flex items-center justify-center text-amber-400 border border-white/10 group-open:bg-amber-400 group-open:text-slate-950 transition-colors">
+<span class="text-xl font-medium transition-transform group-open:rotate-45">+</span>
+</div>
+</summary>
+<div class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-white/[0.06] pt-4">
+Oui. Notre Studio opère pour des clients en Côte d'Ivoire, au Mali, au Sénégal, au Bénin et en Europe. De même, nos formations peuvent être suivies en ligne par des apprenants de toute la zone UEMOA et au-delà.
+</div>
+</details>
+</div>
+</section>
+<!-- END: FAQSection -->
 
+<!-- BEGIN: ContactSection -->
+<section class="py-28 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto relative" id="contact">
+<div class="text-center mb-16">
+<span class="inline-flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-widest bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+Engagement Rapide & Sans Engagement
+</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+Accélérez Votre Trajectoire Numérique
+</h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+Un projet d'application stratégique, un besoin d'accélération tech ou une inscription aux bootcamps ? Parlons-en concrètement.
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-emerald-400/50 hover:bg-[#0D152A] transition-all flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-2xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-3xl mb-4 shadow-inner group-hover:scale-105 transition-transform">
+💬
+</div>
+<h3 class="text-xl font-bold text-white mb-1">WhatsApp Studio & Admission</h3>
+<p class="text-sm text-slate-400 mb-6">Réponse garantie de l'équipe technique sous 2h ouvrées</p>
+<a class="w-full py-3.5 px-5 rounded-2xl bg-emerald-500/20 hover:bg-emerald-500 text-emerald-300 hover:text-slate-950 font-bold text-sm transition-all duration-200 text-center border border-emerald-500/40 shadow-glow-emerald" href="https://wa.me/22604059929" target="_blank" rel="noopener">
+Échanger sur WhatsApp
+</a>
+</div>
+<div class="glass-panel rounded-3xl p-8 border border-white/[0.08] hover:border-blue-400/50 hover:bg-[#0D152A] transition-all flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-2xl bg-blue-500/15 text-blue-400 border border-blue-500/30 flex items-center justify-center text-3xl mb-4 shadow-inner group-hover:scale-105 transition-transform">
+✉️
+</div>
+<h3 class="text-xl font-bold text-white mb-1">Courrier Officiel & RFP</h3>
+<p class="text-sm text-slate-400 mb-6">contact@horizondigitalacademie.com</p>
+<a class="w-full py-3.5 px-5 rounded-2xl bg-blue-500/20 hover:bg-blue-600 text-blue-300 hover:text-white font-bold text-sm transition-all duration-200 text-center border border-blue-500/40 shadow-glow-blue" href="mailto:contact@horizondigitalacademie.com">
+Soumettre un cahier des charges
+</a>
+</div>
+</div>
+<div class="glass-panel rounded-3xl p-8 sm:p-12 border border-white/[0.08] shadow-2xl relative">
+<form class="space-y-6" onsubmit="event.preventDefault(); window.open('https://wa.me/22604059929?text=' + encodeURIComponent('Bonjour, je suis ' + document.getElementById('name').value + ' (' + document.getElementById('email').value + ').\n\n' + document.getElementById('message').value), '_blank');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5" for="name">Votre Nom & Organisation</label>
+<input class="w-full rounded-2xl border border-white/10 bg-white/[0.03] focus:border-amber-400 focus:bg-white/[0.06] focus:ring-4 focus:ring-amber-400/10 text-white text-sm py-3.5 px-4 transition-all placeholder:text-slate-500" id="name" placeholder="Ex: Jean Somé • Entreprise ou Candidat" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5" for="email">Adresse Email Professionnelle</label>
+<input class="w-full rounded-2xl border border-white/10 bg-white/[0.03] focus:border-amber-400 focus:bg-white/[0.06] focus:ring-4 focus:ring-amber-400/10 text-white text-sm py-3.5 px-4 transition-all placeholder:text-slate-500" id="email" placeholder="contact@organisation.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5" for="service">Votre Intérêt Prioritaire</label>
+<select class="w-full rounded-2xl border border-white/10 bg-[#0A0F1D] focus:border-amber-400 focus:ring-4 focus:ring-amber-400/10 text-white text-sm py-3.5 px-4 transition-all" id="service">
+<option value="studio-app">Développement sur-mesure d'application Web / Mobile (Studio)</option>
+<option value="bootcamp-fullstack">Candidature Bootcamp Architecture Web & Cloud (16 sem.)</option>
+<option value="bootcamp-flutter">Candidature Bootcamp Mobile Flutter & Offline-First</option>
+<option value="bootcamp-product">Candidature Bootcamp Product Management & UX/UI</option>
+<option value="partenariat">Partenariat entreprise, incubation ou recrutement d'alumni</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5" for="message">Description de vos objectifs & Délais souhaités</label>
+<textarea class="w-full rounded-2xl border border-white/10 bg-white/[0.03] focus:border-amber-400 focus:bg-white/[0.06] focus:ring-4 focus:ring-amber-400/10 text-white text-sm py-3.5 px-4 transition-all placeholder:text-slate-500" id="message" placeholder="Précisez votre périmètre, le public cible, les fonctionnalités clés ou vos attentes de formation..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-4 px-6 rounded-2xl font-extrabold text-base text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-glow-amber active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Envoyer ma demande à la direction technique</span>
+<svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</button>
+</form>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Contact</span>
-        <h2 class="section-title">Parlons de votre projet</h2>
-        <p class="section-subtitle">Une question, une idée, un projet ? Contactez-nous.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-icon">📱</div>
-          <h3>WhatsApp</h3>
-          <p>Réponse rapide garantie</p>
-          <a href="https://wa.me/22604059929" target="_blank" rel="noopener" class="btn btn-primary">Écrire sur WhatsApp</a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">✉️</div>
-          <h3>Email</h3>
-          <p>contact@horizondigitalacademie.com</p>
-          <a href="mailto:contact@horizondigitalacademie.com" class="btn btn-outline">Envoyer un email</a>
-        </div>
-      </div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-group">
-          <label for="name">Nom complet</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="votre@email.com" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Décrivez votre projet..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Envoyer le message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>🎓 HORIZON DIGITAL ACADEMIE</h3>
-          <p>Académie digitale dédiée à la formation de jeunes à la création d'applications et de solutions numériques pour l'Afrique.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Navigation</h4>
-          <a href="#services">Services</a>
-          <a href="#projets">Projets</a>
-          <a href="#apropos">À propos</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-links">
-          <h4>Services</h4>
-          <a href="#services">Formation Digitale</a>
-          <a href="#services">Développement Web</a>
-          <a href="#services">Applications Mobiles</a>
-          <a href="#services">Solutions de Paiement</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 HORIZON DIGITAL ACADEMIE. Tous droits réservés.</p>
-        <div class="footer-social">
-          <a href="https://wa.me/22604059929" target="_blank" rel="noopener" aria-label="WhatsApp">📱</a>
-          <a href="mailto:contact@horizondigitalacademie.com" aria-label="Email">✉️</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ===== SCROLL TO TOP ===== -->
-  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Retour en haut">↑</button>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#03060E] text-slate-400 pt-20 pb-12 border-t border-white/[0.08] relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/[0.08]">
+<div class="md:col-span-6 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-400 via-indigo-500 to-blue-600 p-[1.5px]">
+<div class="w-full h-full bg-[#050811] rounded-[10px] flex items-center justify-center">
+<svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+</div>
+<span class="text-white font-black text-lg tracking-tight">HORIZON DIGITAL ACADEMIE</span>
+</div>
+<p class="text-slate-400 text-sm max-w-sm leading-relaxed">
+L'accélérateur tech et la fabrique de produits numériques qui hissent l'Afrique de l'Ouest aux plus hauts standards d'ingénierie et d'employabilité mondiale.
+</p>
+<div class="flex items-center gap-3 pt-2 text-xs font-mono text-slate-500">
+<span>🇧🇫 Ouagadougou</span>
+<span>•</span>
+<span>🌍 UEMOA & Diaspora</span>
+<span>•</span>
+<span class="text-emerald-400">94% Placement</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-xs font-extrabold text-white uppercase tracking-widest mb-4">Parcours & Bootcamps</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-amber-400 transition-colors" href="#pedagogie">Architecture Web Fullstack</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#pedagogie">Mobile Flutter & Offline-First</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#pedagogie">Product Management & UX/UI</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#double-impact">Double Modèle Académie & Studio</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#partenaires">Bourses & Partenaires</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-xs font-extrabold text-white uppercase tracking-widest mb-4">Projets du Studio</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-amber-400 transition-colors" href="#projets">YiriwaPay (Fintech)</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#projets">ZINDO (Gestion PME)</a></li>
+<li><a class="hover:text-amber-400 transition-colors" href="#contact">Demander un audit tech</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+<p>© 2026 HORIZON DIGITAL ACADEMIE. Bâtir pour l'Afrique, rayonner à l'international.</p>
+<div class="flex items-center gap-3">
+<a aria-label="Retour en haut" class="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-white border border-white/[0.08] flex items-center justify-center transition-colors shadow-inner" href="#">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m18 15-6-6-6 6"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
 
