@@ -3,161 +3,480 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HORIZON DIGITAL ACADEMIE — Présentation de nos projets</title>
-  <meta name="description" content="HORIZON DIGITAL ACADEMIE : découvrez nos projets digitaux, formations et réalisations. Une académie digitale au service de l'innovation." />
-  <meta name="keywords" content="HORIZON DIGITAL ACADEMIE, projets digitaux, formation, académie digitale, Burkina Faso" />
+  <title>HORIZON DIGITAL ACADEMIE — Solutions Digitales pour l'Afrique</title>
+  <meta name="description" content="HORIZON DIGITAL ACADEMIE : formations digitales, développement web et mobile, et solutions numériques pour les entrepreneurs africains. Basé au Burkina Faso." />
+  <meta name="keywords" content="HORIZON DIGITAL ACADEMIE, formation digitale, développement web, applications mobiles, solutions numériques, Burkina Faso, Afrique" />
   <meta name="author" content="HORIZON DIGITAL ACADEMIE" />
-<meta name="robots" content="index, follow" />
-<meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
-  <meta property="og:title" content="HORIZON DIGITAL ACADEMIE — Présentation de nos projets" />
-  <meta property="og:description" content="Découvrez nos projets digitaux, formations et réalisations." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="63AlHZhp6xTtJulEpHrH4W8yKRelqUK_0cuuaQ7yx_k" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HORIZON DIGITAL ACADEMIE — Solutions Digitales pour l'Afrique" />
+  <meta property="og:description" content="Formations digitales, développement web et mobile, solutions numériques pour les entrepreneurs africains." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="HORIZON DIGITAL ACADEMIE" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HORIZON DIGITAL ACADEMIE" />
+  <meta name="twitter:description" content="Solutions digitales pour les entrepreneurs africains" />
+
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HORIZON DIGITAL ACADEMIE",
+    "description": "Académie digitale dédiée à la formation, au développement et à la présentation de projets numériques innovants pour les entrepreneurs africains.",
+    "url": "https://horizon-digital-academie.onrender.com",
+    "logo": "https://horizon-digital-academie.onrender.com/icon.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+226-04-05-99-29",
+      "contactType": "customer service",
+      "availableLanguage": ["French"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BF"
+    },
+    "sameAs": []
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
     <div class="container">
       <a href="#" class="logo">
         <span class="logo-icon">🎓</span>
         <span class="logo-text">HORIZON DIGITAL ACADEMIE</span>
       </a>
       <nav class="nav" id="nav">
+        <a href="#services">Services</a>
         <a href="#projets">Projets</a>
         <a href="#apropos">À propos</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
     </div>
   </header>
+
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container">
-      <h1>Bienvenue chez <span class="highlight">HORIZON DIGITAL ACADEMIE</span></h1>
-      <p class="hero-subtitle">Nous concevons, développons et présentons des projets digitaux innovants.</p>
+      <span class="hero-badge">🇧🇫 Basé au Burkina Faso · au service de l'Afrique</span>
+      <h1>Transformez votre idée en <span class="highlight">projet digital</span></h1>
+      <p class="hero-subtitle">Formations, développement web et mobile, solutions numériques — tout ce qu'il faut pour réussir dans le digital en Afrique.</p>
       <div class="hero-actions">
-        <a href="#projets" class="btn btn-primary">Découvrir nos projets</a>
+        <a href="#services" class="btn btn-primary">Découvrir nos services</a>
         <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">5</span>
+          <span class="hero-stat-label">Pays couverts</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">10+</span>
+          <span class="hero-stat-label">Projets réalisés</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">100%</span>
+          <span class="hero-stat-label">Engagement</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">24/7</span>
+          <span class="hero-stat-label">Support disponible</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projets" class="section">
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section">
     <div class="container">
-      <h2 class="section-title">Nos projets</h2>
-      <p class="section-subtitle">Découvrez les réalisations de l'académie.</p>
-      <div class="projects-grid">
+      <div class="section-header">
+        <span class="section-badge">Nos services</span>
+        <h2 class="section-title">Tout ce qu'il faut pour réussir dans le digital</h2>
+        <p class="section-subtitle">Des solutions complètes et adaptées au contexte africain, de la formation au développement.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🎓</div>
+          <h3>Formation Digitale</h3>
+          <p>Programmes de formation aux métiers du digital : développement web, marketing digital, entrepreneuriat numérique.</p>
+          <ul class="service-features">
+            <li>Développement web (HTML, CSS, JavaScript)</li>
+            <li>Marketing digital et réseaux sociaux</li>
+            <li>Entrepreneuriat numérique</li>
+            <li>Accompagnement personnalisé</li>
+          </ul>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🌐</div>
+          <h3>Développement Web</h3>
+          <p>Création de sites web professionnels, vitrines, catalogues et applications web sur mesure.</p>
+          <ul class="service-features">
+            <li>Sites vitrines et landing pages</li>
+            <li>Catalogues en ligne</li>
+            <li>Applications web complexes</li>
+            <li>Responsive et optimisé SEO</li>
+          </ul>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">📱</div>
+          <h3>Applications Mobiles</h3>
+          <p>Conception et développement d'applications mobiles adaptées aux besoins des entreprises africaines.</p>
+          <ul class="service-features">
+            <li>Applications Android et iOS</li>
+            <li>Interfaces intuitives et modernes</li>
+            <li>Intégration Mobile Money</li>
+            <li>Support et maintenance</li>
+          </ul>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">💳</div>
+          <h3>Solutions de Paiement</h3>
+          <p>Intégration de solutions de paiement Mobile Money pour encaisser en ligne dans 5 pays.</p>
+          <ul class="service-features">
+            <li>Liens de paiement</li>
+            <li>API et webhooks</li>
+            <li>Billetterie avec QR code</li>
+            <li>Tableau de bord marchand</li>
+          </ul>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">📊</div>
+          <h3>Conseil Digital</h3>
+          <p>Accompagnement stratégique pour la transformation digitale de votre entreprise.</p>
+          <ul class="service-features">
+            <li>Audit digital</li>
+            <li>Stratégie de présence en ligne</li>
+            <li>Optimisation SEO</li>
+            <li>Formation des équipes</li>
+          </ul>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🛠️</div>
+          <h3>Support & Maintenance</h3>
+          <p>Support technique et maintenance pour vos projets digitaux, disponibles 24/7.</p>
+          <ul class="service-features">
+            <li>Mises à jour et corrections</li>
+            <li>Hébergement et déploiement</li>
+            <li>Sauvegardes automatiques</li>
+            <li>Support réactif</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <article class="project-card">
-          <div class="project-icon">💳</div>
+
+  <!-- ===== PROJETS ===== -->
+  <section id="projets" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nos projets</span>
+        <h2 class="section-title">Ce que nous avons construit</h2>
+        <p class="section-subtitle">Découvrez les réalisations de HORIZON DIGITAL ACADEMIE.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card animate-on-scroll">
+          <span class="project-icon">💳</span>
           <h3>YiriwaPay</h3>
-          <p>Plateforme de paiement Mobile Money pour les marchands en Afrique de l'Ouest et Centrale (Burkina Faso, Côte d'Ivoire, Sénégal, Bénin, Cameroun).</p>
+          <p>Plateforme de paiement Mobile Money pour les marchands en Afrique de l'Ouest et Centrale. Encaissement, liens de paiement, billetterie, API.</p>
           <div class="project-tags">
             <span>Next.js</span>
             <span>Supabase</span>
             <span>Paiement</span>
+            <span>5 pays</span>
           </div>
           <a href="https://yiriwapay-app.vercel.app" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
         </article>
-
-        <article class="project-card">
-          <div class="project-icon">🎓</div>
-          <h3>Formation Digitale</h3>
-          <p>Programme de formation aux métiers du digital : développement web, marketing digital, et entrepreneuriat numérique.</p>
+        <article class="project-card animate-on-scroll">
+          <span class="project-icon">🍽️</span>
+          <h3>Vitrines "Chez Awa"</h3>
+          <p>Site vitrine et catalogue en ligne pour un restaurant burkinabè avec commande par WhatsApp.</p>
           <div class="project-tags">
+            <span>HTML/CSS</span>
+            <span>Catalogue</span>
+            <span>WhatsApp</span>
+          </div>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <span class="project-icon">🎓</span>
+          <h3>Plateforme de Formation</h3>
+          <p>Plateforme en ligne pour la formation aux métiers du digital avec cours, exercices et suivi.</p>
+          <div class="project-tags">
+            <span>Web</span>
             <span>Formation</span>
-            <span>Digital</span>
-            <span>Accompagnement</span>
+            <span>Interactif</span>
           </div>
           <a href="#contact" class="project-link">En savoir plus →</a>
         </article>
-
-        <article class="project-card">
-          <div class="project-icon">🌐</div>
-          <h3>Sites Vitrines</h3>
-          <p>Création de sites vitrines et catalogues en ligne pour les commerces et entrepreneurs locaux.</p>
-          <div class="project-tags">
-            <span>Web</span>
-            <span>Vitrine</span>
-            <span>Sur mesure</span>
-          </div>
-          <a href="#contact" class="project-link">Demander un devis →</a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-icon">📱</div>
-          <h3>Applications Mobiles</h3>
-          <p>Conception et développement d'applications mobiles adaptées aux besoins des entreprises africaines.</p>
+        <article class="project-card animate-on-scroll">
+          <span class="project-icon">📱</span>
+          <h3>App Mobile Commerciale</h3>
+          <p>Application mobile pour la gestion commerciale des petites entreprises avec suivi des ventes et stocks.</p>
           <div class="project-tags">
             <span>Mobile</span>
             <span>Android</span>
-            <span>iOS</span>
+            <span>Gestion</span>
           </div>
           <a href="#contact" class="project-link">En savoir plus →</a>
         </article>
-
       </div>
     </div>
   </section>
 
-  <section id="apropos" class="section section-alt">
+  <!-- ===== À PROPOS ===== -->
+  <section id="apropos" class="section">
     <div class="container">
-      <h2 class="section-title">À propos</h2>
-      <div class="about-content">
-        <p>
-          <strong>HORIZON DIGITAL ACADEMIE</strong> est une académie digitale dédiée à la formation,
-          au développement et à la présentation de projets numériques innovants.
-        </p>
-        <p>
-          Notre mission : accompagner les entrepreneurs, les commerçants et les jeunes talents
-          dans leur transformation digitale, en proposant des solutions concrètes et adaptées
-          au contexte africain.
-        </p>
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-number">5</span>
-            <span class="stat-label">Pays couverts</span>
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-badge">À propos</span>
+          <h3>Une académie digitale au service de l'Afrique</h3>
+          <p>
+            <strong>HORIZON DIGITAL ACADEMIE</strong> est née de la volonté d'accompagner les entrepreneurs, les commerçants et les jeunes talents dans leur transformation digitale.
+          </p>
+          <p>
+            Notre mission : proposer des solutions concrètes et adaptées au contexte africain. De la formation au développement, nous accompagnons chaque projet de A à Z.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="about-feature-icon">🎯</span>
+              <span>Approche personnalisée</span>
+            </div>
+            <div class="about-feature">
+              <span class="about-feature-icon">🌍</span>
+              <span>Adapté à l'Afrique</span>
+            </div>
+            <div class="about-feature">
+              <span class="about-feature-icon">⚡</span>
+              <span>Livraison rapide</span>
+            </div>
+            <div class="about-feature">
+              <span class="about-feature-icon">🤝</span>
+              <span>Support continu</span>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-number">4+</span>
-            <span class="stat-label">Projets réalisés</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Engagement</span>
+        </div>
+        <div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Pays couverts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Personnes formées</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Engagement</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section id="temoignages" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">Une question, un projet ? Contactez-nous.</p>
+      <div class="section-header">
+        <span class="section-badge">Témoignages</span>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+        <p class="section-subtitle">Des résultats concrets pour des entrepreneurs africains.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Grâce à HORIZON DIGITAL ACADEMIE, j'ai pu lancer mon site de vente en ligne et recevoir des paiements Mobile Money. Le processus a été rapide et professionnel.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Awa Traoré</div>
+              <div class="testimonial-role">Commerçante, Ouagadougou</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">La formation en développement web m'a permis de créer mes propres sites. L'accompagnement est excellent et adapté à notre réalité africaine.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Moussa Ouédraogo</div>
+              <div class="testimonial-role">Développeur junior, Bobo-Dioulasso</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">YiriwaPay a transformé la façon dont je reçois les paiements. Plus de captures d'écran à vérifier, tout est automatique et traçable.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">K</div>
+            <div>
+              <div class="testimonial-name">Karim Compaoré</div>
+              <div class="testimonial-role">Organisateur d'événements, Ouagadougou</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Questions fréquentes</h2>
+        <p class="section-subtitle">Tout ce que vous devez savoir.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Combien coûte un site web ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Le coût dépend de la complexité du projet. Un site vitrine simple commence à partir de 50 000 FCFA. Un site e-commerce ou une application web peut coûter plus. Contactez-nous pour un devis personnalisé.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Combien de temps pour créer un site ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Un site vitrine simple : 1 à 2 semaines. Un site e-commerce ou une application : 3 à 6 semaines. Nous vous donnons un délai précis après l'analyse de votre projet.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Proposez-vous des formations ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, nous proposons des formations en développement web, marketing digital et entrepreneuriat numérique. Les formations peuvent être en présentiel ou en ligne.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Travaillez-vous avec des clients en dehors du Burkina Faso ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, nous travaillons avec des clients dans toute l'Afrique de l'Ouest et au-delà. La communication se fait par WhatsApp, email et visioconférence.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Proposez-vous de l'hébergement ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, nous proposons des solutions d'hébergement gratuites (Vercel, Netlify, Render) ou payantes selon vos besoins. Nous vous conseillons la meilleure option.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact</span>
+        <h2 class="section-title">Parlons de votre projet</h2>
+        <p class="section-subtitle">Une question, une idée, un projet ? Contactez-nous.</p>
+      </div>
       <div class="contact-grid">
         <div class="contact-card">
           <div class="contact-icon">📱</div>
           <h3>WhatsApp</h3>
-          <p>+226 04 05 99 29</p>
+          <p>Réponse rapide garantie</p>
           <a href="https://wa.me/22604059929" target="_blank" rel="noopener" class="btn btn-primary">Écrire sur WhatsApp</a>
         </div>
         <div class="contact-card">
           <div class="contact-icon">✉️</div>
           <h3>Email</h3>
           <p>contact@horizondigitalacademie.com</p>
-          <a href="mailto:contact@horizondigitalacademie.com" class="btn btn-secondary">Envoyer un email</a>
+          <a href="mailto:contact@horizondigitalacademie.com" class="btn btn-outline">Envoyer un email</a>
         </div>
       </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Décrivez votre projet..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Envoyer le message</button>
+      </form>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 HORIZON DIGITAL ACADEMIE. Tous droits réservés.</p>
-      <p class="footer-sub">Conçu avec passion au Burkina Faso 🇧🇫</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🎓 HORIZON DIGITAL ACADEMIE</h3>
+          <p>Académie digitale dédiée à la formation, au développement et à la présentation de projets numériques innovants pour les entrepreneurs africains.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="#services">Services</a>
+          <a href="#projets">Projets</a>
+          <a href="#apropos">À propos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#services">Formation Digitale</a>
+          <a href="#services">Développement Web</a>
+          <a href="#services">Applications Mobiles</a>
+          <a href="#services">Solutions de Paiement</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HORIZON DIGITAL ACADEMIE. Tous droits réservés.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/22604059929" target="_blank" rel="noopener" aria-label="WhatsApp">📱</a>
+          <a href="mailto:contact@horizondigitalacademie.com" aria-label="Email">✉️</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Retour en haut">↑</button>
 
   <script src="script.js"></script>
 </body>
